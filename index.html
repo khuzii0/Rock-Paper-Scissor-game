@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="btn" id="turn-mode-btn">Turn Dark Mode</button>
+        <header>
+            <h1>Rock Paper Scissor Game</h1>
+        </header>
+    <main>
+        <div class="container">
+            <div class="card" id="rock">👊</div>
+            <div class="card" id="paper">🗞️</div>
+            <div class="card" id="scissor">✂️</div>
+        </div>
+        <div id="turn-value-declare">
+            <span id="your-turn"></span>
+            <span id="comp-turn"></span>
+        </div>
+        <div id="round-count"></div>
+        <div class="level">
+            <h3>difficulty level : </h3>
+            <button class="btn" id="difficulty">Easy</button>
+        </div>
+        <div class="score">
+            <h3>Score</h3>
+            <table>
+                <tr>
+                    <th class="your-color">your's</th>
+                    <th class="comp-color">computer's</th>
+                </tr>
+                <tr>
+                    <td class="your-color" id="your-score">0</td>
+                    <td class="comp-color" id="comp-score">0</td>
+                </tr>
+                <tr>
+                    <td  id="your-score-emoji"></td>
+                    <td  id="comp-score-emoji"></td>
+                </tr>
+            </table>
+        </div>
+        <div class=" parent-sec">
+            <h3 class="winner-sec hide">Who Won 🥇</h3>
+        </div>
+    </main>
+    <button class="btn" id="reset-btn">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
